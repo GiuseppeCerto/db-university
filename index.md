@@ -21,3 +21,11 @@ WHERE date_of_birth <= DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
 SELECT *
 FROM `courses`
 WHERE `period` = 'I semestre' AND `year` = 1;
+
+<!-- es. n. 5 -->
+
+SELECT *
+FROM `exams`
+WHERE `date` = `2020-06-20` AND `hour` > `14:00:00`;
+
+<!-- es. n. 6 -->
