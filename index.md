@@ -16,6 +16,8 @@ SELECT *
 FROM students 
 WHERE date_of_birth <= DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
 
+<!-- SOLUZIONE TROVATA SU INTERNET (chiedere come funzionano le funzioni) -->
+
 <!-- es. n. 4 -->
 
 SELECT *
