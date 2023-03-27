@@ -29,3 +29,9 @@ FROM `exams`
 WHERE `date` = `2020-06-20` AND `hour` > `14:00:00`;
 
 <!-- es. n. 6 -->
+
+SELECT *
+FROM `degrees`
+WHERE `level` = 'magistrale';
+
+<!-- es. n. 7 -->
