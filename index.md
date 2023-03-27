@@ -11,3 +11,9 @@ FROM `courses`
 WHERE `cfu` > 10;
 
 <!-- es. n. 3 -->
+
+SELECT * 
+FROM students 
+WHERE date_of_birth <= DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
+
+<!-- es. n. 4 -->
