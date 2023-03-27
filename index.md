@@ -35,3 +35,6 @@ FROM `degrees`
 WHERE `level` = 'magistrale';
 
 <!-- es. n. 7 -->
+
+SELECT count(*)
+FROM `departments`;
