@@ -25,3 +25,24 @@ WHERE `teachers`.`name` = 'Fulvio' AND `teacher`.`surname` = 'Amato';
 
 <!-- Join esw. n. 4 -->
 
+SELECT `students`.`name`, `students`.`surname`, `degrees`.`name`, `courses`.`name`
+FROM `students` 
+JOIN `degrees`
+ON `degrees`.`id` = `students`.`degree_id`
+JOIN `courses`
+ON `degrees`.`id` = `courses`.`degree_id`
+ORDER BY `students`.`name` ASC;
+
+<!-- Join es. n. 5 -->
+
+SELECT `degrees`.`name`,`courses`.`name`,`teachers`.`name`,`teachers`.`surname`
+FROM `degrees` 
+JOIN `courses`
+ON `degrees`.`id` = `courses`.`degree_id`
+JOIN `course_teacher`
+ON `degrees`.`id` = `course_teacher`.`course_id`
+JOIN `teachers`
+ON `teachers`.`id` = `course_teacher`.`course_id`;
+
+<!-- Join es. n. 6 -->
+
