@@ -46,3 +46,16 @@ ON `teachers`.`id` = `course_teacher`.`course_id`;
 
 <!-- Join es. n. 6 -->
 
+SELECT `teachers`.`name`,`teachers`.`surname`,`departments`.`name`
+FROM `teachers`
+JOIN `course_teacher`
+ON `teachers`.`id` = `course_teacher`.`teacher_id`
+JOIN `courses`
+ON `courses`.`id` = `course_teacher`.`course_id`
+JOIN `degrees`
+ON `degrees`.`id` = `courses`.`degree_id`
+JOIN `departments`
+ON `departments`.`id` = `degrees`.`department_id`
+WHERE `departments`.`name` = 'Dipartimento di matematica';
+
+<!-- Join es. BONUS -->
