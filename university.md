@@ -43,6 +43,6 @@ FROM `departments`;
 
 <!-- es. n. 8 -->
 
-SELECT *
+SELECT count(*)
 FROM `teachers`
 WHERE `phone` IS NULL;
